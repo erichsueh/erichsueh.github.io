@@ -1,0 +1,47 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+	background-image: url("Images/test.jpg");
+	color:#F1F1F1;
+
+}
+
+a{
+	font-family: 'Lato', sans-serif;
+}
+
+.colourgrey{
+	color:#F1F1F1;
+}
+
+.colourblack{
+	color:#181718;
+}
+
+.colourlightblue{
+	color:#61D6FF;
+}
+
+.colourdarkblue{
+	color:#1CABD1;
+}
+
+.colourwhite{
+	color:#FFFFFF;
+}
+
+.linkstyling{
+	margin:10px;
+	text-decoration:none;
+	font-size:20px;
+	
+}
+
+.navbar{
+	margin-top:17px;
+}
+
+.mainh1{
+	font-size:40px;
+	padding-top:12%;
+}
