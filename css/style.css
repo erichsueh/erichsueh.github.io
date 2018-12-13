@@ -10,6 +10,10 @@ a{
 	font-family: 'Lato', sans-serif;
 }
 
+a:hover{
+	color:#61D6FF;
+}
+
 .colourgrey{
 	color:#F1F1F1;
 }
@@ -30,6 +34,7 @@ a{
 	color:#FFFFFF;
 }
 
+
 .linkstyling{
 	margin:10px;
 	text-decoration:none;
@@ -37,11 +42,23 @@ a{
 	
 }
 
+.importantlink{
+	border-style:solid;
+	padding:7px;
+	border-color:#61D6FF;
+	
+}
+
 .navbar{
 	margin-top:17px;
 }
 
+.logoimage{
+	width:200px;
+	margin-top:-42px; 
+}
+
 .mainh1{
 	font-size:40px;
-	padding-top:12%;
+	padding-top:10%;
 }
