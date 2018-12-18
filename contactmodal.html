@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	-webkit-animation-name: fadeIn; /* Fade in the background */
+	-webkit-animation-duration: 0.4s;
+	animation-name: fadeIn;
+	animation-duration: 0.4s
+}
+
+.closecontact{
+	display:none;
+	position:fixed;
+	left: 300px;
+	top: 73px;
+	z-index:1;
+	height:25px;;
+	background-color: #F1F1F1;
+	-webkit-animation-name: closeIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: closeIn;
+	animation-duration: 0.4s;
+	padding-left:3px;
+	padding-right:3px;
+	padding-top:4px;
+	padding-bottom:20px;
+	font-size:35px;
+	border-radius: 0px 10px 10px 0px;
+	border-top:1px solid;
+	border-bottom:1px solid;
+	border-right:1px solid;
+	border-color:#F1F1F1;
+	color:#1CABD1;
+}
+
+.closecontact:hover{
+	background-color: #F1F1F1;
+	cursor:pointer;
+	color:#61D6FF;
+}
+
+.modal-content {
+	position: fixed;
+	bottom: 0;
+	background-color: #181718;
+	width: 300px;
+	height:100%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: slideIn;
+	animation-duration: 0.4s;
+	background-image: url("css/Images/test.png");
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color:#1CABD1;
+	color: #F1F1F1;
+	margin-bottom:25px;
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+.modal-links{
+	color:#F1F1F1;
+	text-decoration:none;
+}
+
+.modal-link:visited{
+	color:none;
+	text-decoration:none;
+}
+
+.contacth3{
+	border-bottom: 1px solid;
+	border-color:#61D6FF;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+/* Add Animation */
+@-webkit-keyframes closeIn {
+	from {left: -100px; opacity: 0} 
+	to {left: 300; opacity: 1}
+}
+
+@keyframes closeIn {
+	from {left: -100px; opacity: 0}
+	to {left: 300; opacity: 1}
+}
+
+
+@-webkit-keyframes slideIn {
+	from {left: -400px; opacity: 0} 
+	to {left: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+	from {left: -400px; opacity: 0}
+	to {left: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+}
+</style>
+</head>
+<body>
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="mycontactModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Eric Hsueh   </h2>
+    </div>
+	<div class="contacth3">
+      <h3>Phone</h3>
+    </div>
+    <div class="modal-body">
+      <p>Mobile: (1)778-512-4499</p>
+    </div>
+	<div class="contacth3">
+      <h3>Emails</h3>
+    </div>
+    <div class="modal-body">
+      <p>erichsueh1337@hotmail.com</p>
+      <p>ehsueh@ualberta.ca</p>
+    </div>
+    <div class="contacth3">
+      <h3>Links</h3>
+    </div>
+	<div class="modal-body" style="padding-top:16px;">
+      <a class="modal-links" href="https://github.com/erichsueh" target="_blank">Github</a> 
+    </div>
+	<div id="closecontactmodal" class="closecontact">
+	<
+	</div>
+  </div>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('mycontactModal');
+var closemodal = document.getElementById('closecontactmodal');
+// Get the button that opens the modal
+var btn1 = document.getElementById("contactBtn1");
+var btn2 = document.getElementById("contactBtn2");
+// Get the <span> element that closes the modal
+var close = document.getElementsByClassName("closecontact")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal.style.display = "block";
+  closemodal.style.display = "block";
+}
+
+btn2.onclick = function() {
+  modal.style.display = "block";
+  closemodal.style.display = "block";
+}
+
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

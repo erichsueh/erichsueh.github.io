@@ -2,12 +2,20 @@
 <html>
 
 <head>
-
+	
 	<link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+    $(function(){
+      $("#contactModal").load("contactmodal.html"); 
+    });
+    </script> 
 </head>
 <body>
+	<div id="contactModal"></div>
+
 	<div class="navbar">
 		<div style="margin-top:34px;" align="right">
 			<a class="colourgrey linkstyling" href="/">Home</a>
@@ -15,13 +23,13 @@
 			<a class="colourgrey linkstyling" href="/">Experience</a>
 			<a class="colourgrey linkstyling" href="/">Projects</a>
 			<a class="colourgrey linkstyling" href="/">Resume</a>
-			<a class="colourgrey linkstyling importantlink" href="/">Contact</a>
+			<button class="buttonstyling" id="contactBtn1">Contact</button>
 		</div>
 		<img class="logoimage" src="./css/Images/ehlogo.png" alt="EricHsuehLogo">
 	</div>
 	<div align="center" class="mainh1">
 		<h1> Developer </h1>
-		<a class="colourgrey linkstyling importantlink" href="/">Contact</a>
+		<button class="buttonstyling" id="contactBtn2">Contact</button>
 		<a class="colourgrey linkstyling importantlink" href="/">Resume</a>
 	</div>
 </body>

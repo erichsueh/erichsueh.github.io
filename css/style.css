@@ -1,9 +1,22 @@
 body{
-    font-family: 'Lato', sans-serif;
+	
     font-family: 'Source Sans Pro', sans-serif;
 	background-image: url("Images/test.jpg");
 	color:#F1F1F1;
 
+}
+
+h2{
+	font-family: 'Lato', sans-serif;
+}
+
+h3{
+	font-family: 'Lato', sans-serif;
+}
+
+
+p{
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 a{
@@ -55,10 +68,32 @@ a:hover{
 
 .logoimage{
 	width:200px;
-	margin-top:-42px; 
+	margin-top:-56px; 
 }
 
 .mainh1{
 	font-size:40px;
 	padding-top:10%;
+}
+
+
+.buttonstyling{
+	background-color:transparent;
+	color:#F1F1F1;
+	border-color:#61D6FF;
+	font-family: 'Lato', sans-serif;
+	border-style:solid;
+	padding:7px;
+	font-size:20px;
+	border-width:3px;
+	cursor:pointer;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.buttonstyling:hover{
+	color:#61D6FF;
+}
+
+.contactBtnclass{
 }
