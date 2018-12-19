@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: fadeIn;
+	animation-duration: 0.4s;
+}
+
+.closecontact{
+	display:none;
+	position:fixed;
+	left: 300px;
+	top: 73px;
+	z-index:1;
+	height:25px;;
+	background-color: #F1F1F1;
+	-webkit-animation-name: closeIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: closeIn;
+	animation-duration: 0.4s;
+	padding-left:3px;
+	padding-right:3px;
+	padding-top:4px;
+	padding-bottom:20px;
+	font-size:35px;
+	border-radius: 0px 10px 10px 0px;
+	border-top:1px solid;
+	border-bottom:1px solid;
+	border-right:1px solid;
+	border-color:#F1F1F1;
+	color:#1CABD1;
+}
+
+.closecontact:hover{
+	background-color: #F1F1F1;
+	cursor:pointer;
+	color:#61D6FF;
+}
+
+.contactmodal-content {
+	position: fixed;
+	bottom: 0;
+	background-color: #181718;
+	width: 300px;
+	height:100%;
+	-webkit-animation-name: slideIn;
+	-webkit-animation-duration: 0.4s;
+	animation-name: slideIn;
+	animation-duration: 0.4s;
+	background-image: url("css/Images/test.png");
+}
+
+.resumemodal-content {
+	position: fixed;
+	background-color: #fefefe;
+	width: 60%;
+	bottom:5%;
+	left:20%;
+	height:85%;
+	overflow: auto;
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 0.5s;
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+}
+
+@media only screen and (max-width: 750px) {
+	.resumemodal-content{
+		width:80%;
+		left:10%;
+	}
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color:#1CABD1;
+	color: #F1F1F1;
+}
+
+.modalresume-header {
+	padding: 2px 16px;
+	background-color:#1CABD1;
+	color: #F1F1F1;
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+.modal-links{
+	color:#F1F1F1;
+	text-decoration:none;
+}
+
+.modal-link:visited{
+	color:none;
+	text-decoration:none;
+}
+
+.contacth3{
+	border-bottom: 1px solid;
+	border-color:#61D6FF;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.resumestuff{
+	color:#181718;
+	font-size:16px;
+	padding-left:4%;
+	padding-right:4%;
+	padding-top:4%;
+	padding-bottom:4%;
+}
+
+.resumeh3{
+	font-family: 'Lato', sans-serif;
+	color:#3f97e5;
+	font-size:2em;
+}
+
+.resumeh4{
+	font-family: 'Lato', sans-serif;
+	color:#959595;
+	font-size:1.4em;
+	padding-top:5px;
+	margin-top:0px;
+	padding-bottom:0px;
+	margin-bottom:15px;
+}
+
+.resumeh5{
+	font-weight:bold;
+	color:#f17112;
+}
+
+.nopadding{
+	margin:0px;
+	padding:0px;
+}
+
+.downloadresumestyle{
+	float:right; 
+	padding-top:14px;
+	padding-right:50px;
+}
+
+/* Add Animation */
+@-webkit-keyframes closeIn {
+	from {left: -100px; opacity: 0} 
+	to {left: 300; opacity: 1}
+}
+
+@keyframes closeIn {
+	from {left: -100px; opacity: 0}
+	to {left: 300; opacity: 1}
+}
+
+
+@-webkit-keyframes slideIn {
+	from {left: -400px; opacity: 0} 
+	to {left: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+	from {left: -400px; opacity: 0}
+	to {left: 0; opacity: 1}
+}
+
+@-webkit-keyframes resumeslideIn {
+	from {bottom: -200px; opacity: 0} 
+	to {bottom: 5%; opacity: 1}
+}
+
+@keyframes resumeslideIn {
+	from {bottom: -200px; opacity: 0}
+	to {bottom: 5%; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0} 
+	to {opacity: 1}
+}
+</style>
+</head>
+<body>
+
+<!--Contact Modal Leftside-->
+<div id="mycontactModal" class="modal">
+	<div class="contactmodal-content">
+	
+		<div class="modal-header">
+			<h2>Eric Hsueh   </h2>
+		</div>
+		
+		<div class="contacth3">
+			<h3>Phone</h3>
+		</div>
+		<div class="modal-body">
+			<p>Mobile: (1)778-512-4499</p>
+		</div>
+		
+		<div class="contacth3">
+			<h3>Emails</h3>
+		</div>
+		<div class="modal-body">
+			<p>erichsueh1337@hotmail.com</p>
+			<p>ehsueh@ualberta.ca</p>
+		</div>
+		
+		<div class="contacth3">
+			<h3>Links</h3>
+		</div>
+		<div class="modal-body" style="padding-top:16px;">
+			<a class="modal-links" href="https://github.com/erichsueh" target="_blank">Github</a> 
+		</div>
+		<div id="closecontactmodal" class="closecontact">
+			<
+		</div>
+	</div>
+</div>
+
+<!--Resume Modal Bottom-->
+<div id="myresumeModal" class="modal">
+	<div class="resumemodal-content">
+	
+		<div class="modalresume-header">
+			<span class="close">&times;</span>
+			<h2 style="display: inline-block;">Resume</h2>
+			<a class="colourgrey linkstyling downloadresumestyle" href="./files/EricHsuehResume.pdf" download>Download PDF</a>
+		</div>
+		
+		<div class="modal-body resumestuff">
+			<h3 class="nopadding resumeh3">Eric Hsueh</h3>
+			<p class="nopadding">Email: erichsueh1337@hotmail.com</p>
+			<p class="nopadding">Phone: 1-778-512-4499</p>
+			<p class="nopadding">Website: https://erichsueh.github.io/</p>
+			<br>
+			
+			<h4 class="resumeh4">Education</h4>
+			<p class ="nopadding resumeh5">Bachelor of Science with Specialization in Computing Sciences</p>
+			<p class ="nopadding">University of Alberta, Edmonton, Alberta / 09.2013 – 05.2018</p>
+			<br>
+			
+			<h4 class="resumeh4">Work Experience</h4>
+			<p class ="nopadding resumeh5">Nexone Programmer / Calgary, Alberta / 05.2017 – Present</p>
+			<p class ="nopadding">In order to allocate more of a developer’s time towards bug fixes and application programming, Nexone needed a way for the marketing team to quickly upload new pages onto their website. My task was to learn umbraco from scratch and help maintain their website. Using CSS, HTML, Javascript, ASP.net, and SQL knowledge, I created a website that the marketing team can quickly access and change the contents. Now, the website is only updated by the marketing team thus allocating most of my time towards bug fixes of our app.</p>
+			<br>
+			<p class ="nopadding resumeh5">NCHC, High Performance Computing Internship / Taichaung, Taiwan / 07.2015 – 08.2015</p>
+			<p class ="nopadding">The people at NCHC wanted a way to 3D print off certain parts of the brain. My goal was to create a program in which you could segmentate multiple portions of a MRI scan and create that as a 3D model. I found multiple Python packages and integrated them together to make a seamless program that could read MRI scans, segmentate the image, and be printed off by a 3D printer. The result became 3D printed models of the human body for doctors to be able to study.</p>
+			<br>
+			<p class ="nopadding resumeh5">Team Lead, Lifeguard, Instructor / YMCA Surrey, YMCA Edmonton / 07.2011 – 05.2018</p>
+			<p class ="nopadding">The YMCA of Edmonton required an experienced lifeguard swim instructor to help coordinate the chaotic swimming lessons. I trained new staff on the proper procedures, help instructors with special needs children, keep records up to date, as well as maintained the flow of communication between the managers and instructors. In doing so created a extremely efficient and organized lessons for both the instructors as well as students.</p>
+			<br>
+			
+			<h4 class="resumeh4">Skills</h4>
+			<p class ="nopadding">Fluent in English, Mandarin, and Taiwanese.  Basic Japanese and Basic French</p>
+			<p class ="nopadding">Programming languages from most familiar: Python, JavaScript, HTML, SQL, Java, C, C++</p>
+			<p class ="nopadding">Comfortable with Windows and Linux</p>
+			<br>
+			
+			<h4 class="resumeh4">Volunteering Experience</h4>
+			<p class ="nopadding resumeh5">King’s University Programmer / Edmonton, King’s University / 05.2016 – 07.2016</p>
+			<p class ="nopadding">There are a bunch of old physic simulation tools that were originally programmed in Flash. Due to the desire to have such items on the mobile phone, I was tasked to recreate it using Javascript. The simulator created is of a particle in a electromagnetic field in which the user is able to measure the forces acted upon the particle and experiment with the properties that is unique to the particle. </p>
+			<br>
+			<p class ="nopadding resumeh5">Hospital Gift Shop Customer Service / 11.2013 – 05.2018</p>
+			<p class ="nopadding">The hospital gift shop is a high patient traffic area in the hospital. Therefore they require volunteers to interact with the patients as they walk around and assist them with anything they need. I took the role of helping new volunteers get acquainted with the store, as well as helped the special needs people find their desired items.</p>
+			<br>
+			
+			<h4 class="resumeh4">Projects</h4>
+			<p class ="nopadding resumeh5">Edmonton Veterinary Electronic Medical Records</p>
+			<p class ="nopadding">Alberta Helping Animals Society is a charity organization who allows poor owners to have proper treatment to their pets. They were running out of space to keep the records for all of their patients. Therefore they enlisted our help to make them a Electronic Medical Record or EMR. I worked as a team, by using user stories and agile sprint practices, managed to create a EMR using Javascript, HTML, and Ember. Now they have a fully functional EMR that can keep track of all the patient's medical records, as well as make new appointments.</p>
+			<br>
+			<p class ="nopadding resumeh5">Robotics Delivery Bot Project</p>
+			<p class ="nopadding">With the robotic roombas that my group have been programming, we were tasked to find a use for them in the real world. Therefore I thought up of a system in which the robot could make a delivery from room to room without touching the robot. All the user has to do is click on a position of the map and the robot will autonomously arrive at that location. I made use of Simultaneous Locating and Movement in order to create the waypoints that the robot would run to. Thereby showing the viability of such a robot in a real world scenario.</p>
+			<br>
+			<p class ="nopadding resumeh5">Databases Project</p>
+			<p class ="nopadding">The task at hand was to convert an OSM map into a SQL database and be able to manipulate it. Therefore, I created a python program that would take the OSM file and directly insert values and tables into the SQL database. Then I created triggers so that the database would always stay within the boundaries. Afterwards, I created a C program that would run queries against the database to figure out the space that a building takes up.</p>
+			<br>
+			<p class ="nopadding resumeh5">Visual Recognition Final Project</p>
+			<p class ="nopadding">My group was tasked to figure out which two numbers were being shown to us. Therefore we sat down as a group and created a Neural Network using tensorflow. Our final solution was a fairly small neural network which could test the dataset with a 95% accuracy.</p>
+		</div>
+	</div>
+</div>
+
+
+<script>
+//contact variables
+var contactmodal = document.getElementById("mycontactModal");
+var contactbtn1 = document.getElementById("contactBtn1");
+var contactbtn2 = document.getElementById("contactBtn2");
+var contactclose = document.getElementsByClassName("closecontact")[0];
+
+//resume variables
+var resumemodal = document.getElementById("myresumeModal");
+var resumebtn1 = document.getElementById("resumeBtn1");
+var resumebtn2 = document.getElementById("resumeBtn2");
+
+//contact sidebar close
+contactclose.onclick = function() {
+	contactmodal.style.display = "none";
+}
+
+//close both if outside window
+window.onclick = function(event) {
+	if (event.target == contactmodal) {
+		contactmodal.style.display = "none";
+	}
+	else if (event.target == resumemodal) {
+		resumemodal.style.display = "none";
+	}
+}
+
+function openContact(){
+	contactmodal.style.display = "block";
+	closecontactmodal.style.display = "block";
+}
+
+function openResume(){
+	resumemodal.style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
