@@ -1,9 +1,9 @@
 body{
 	
     font-family: 'Source Sans Pro', sans-serif;
-	background-image: url("Images/test.jpg");
+	background-image: url("Images/a3.jpg");
 	color:#F1F1F1;
-
+	background-size:cover;
 }
 
 h2{
