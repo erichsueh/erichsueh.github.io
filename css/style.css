@@ -1,9 +1,15 @@
 body{
 	
     font-family: 'Source Sans Pro', sans-serif;
-	background-image: url("Images/a3.jpg");
+	background-image: url("Images/a10.jpg");
 	color:#F1F1F1;
 	background-size:cover;
+}
+
+@media(max-width: 1100px) {
+	body{
+		background-size:inherit;
+	}
 }
 
 h2{
