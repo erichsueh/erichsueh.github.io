@@ -51,6 +51,13 @@
 	color:#61D6FF;
 }
 
+.closeresume {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
 .contactmodal-content {
 	position: fixed;
 	bottom: 0;
@@ -92,6 +99,7 @@
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
+	padding-left:10px;
 }
 
 .close:hover,
@@ -330,10 +338,15 @@ var contactclose = document.getElementsByClassName("closecontact")[0];
 var resumemodal = document.getElementById("myresumeModal");
 var resumebtn1 = document.getElementById("resumeBtn1");
 var resumebtn2 = document.getElementById("resumeBtn2");
+var resumeclose = document.getElementsByClassName("close")[0];
 
 //contact sidebar close
 contactclose.onclick = function() {
 	contactmodal.style.display = "none";
+}
+
+resumeclose.onclick = function() {
+	resumemodal.style.display = "none";
 }
 
 //close both if outside window
