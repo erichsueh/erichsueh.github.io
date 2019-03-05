@@ -7,32 +7,87 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!--loadmodel contact + resume-->
 	<script> 
     $(function(){
       $("#contactModal").load("crmodal.html");
     });
     </script> 
+	
+	<!--Button Script-->
+	<script>
+	$(document).ready(function(){
+		$("#homebutton").click(function(){
+			$("#homepagediv").fadeIn(300);
+			$("#aboutpagediv").fadeOut(.01);
+			$("#exppagediv").fadeOut(.01);
+			$("#projectpagediv").fadeOut(.01);
+		});
+		$("#aboutbutton").click(function(){
+			$("#homepagediv").fadeOut(.01);
+			$("#aboutpagediv").fadeIn(300);
+			$("#exppagediv").fadeOut(.01);
+			$("#projectpagediv").fadeOut(.01);
+		});
+		$("#expbutton").click(function(){
+			$("#homepagediv").fadeOut(.01);
+			$("#aboutpagediv").fadeOut(.01);
+			$("#exppagediv").fadeIn(300);
+			$("#projectpagediv").fadeOut(.01);
+		});
+		$("#projectbutton").click(function(){
+			$("#homepagediv").fadeOut(.01);
+			$("#aboutpagediv").fadeOut(.01);
+			$("#exppagediv").fadeOut(.01);
+			$("#projectpagediv").fadeIn(300);
+		});
+	});
+	</script>
+	
 </head>
-<body>
+<body class="homebg">
 	<div id="contactModal"></div>
 	<div id="resumeModal"></div>
 	<div class="navbar">
 		<div style="margin-top:34px;" align="right">
-			<a class="colourgrey linkstyling" href="/">Home</a>
-			<a class="colourgrey linkstyling" href="/">About</a>
+			<a id="homebutton" class="colourgrey linkstyling">Home</a>
+			<a id="aboutbutton" class="colourgrey linkstyling">About</a>
 			<button class="buttonstyling" onclick="openContact()">Contact</button>
-			<a class="colourgrey linkstyling" href="/">Experience</a>
-			<a class="colourgrey linkstyling" href="/">Projects</a>
+			<a id="expbutton" class="colourgrey linkstyling">Experience</a>
+			<a id="projectbutton" class="colourgrey linkstyling">Projects</a>
 			<button class="buttonstyling" onclick="openResume()">Resume</button>
 			<!--<a class="colourgrey linkstyling importantlink" href="/">Resume</a>-->
 		</div>
 		<img class="logoimage" src="./css/Images/ehlogo.png" alt="EricHsuehLogo">
 	</div>
-	<div align="center" class="mainh1">
+	
+	<!--Homepage Screen-->
+	<div id="homepagediv" align="center" class="mainh1">
 		<h1> Developer </h1>
 		<button class="buttonstyling" onclick="openContact()">Contact</button>
 		<button class="buttonstyling" onclick="openResume()">Resume</button>
 	</div>
+	
+	<!--About Screen-->
+	<div class="initialhidden" id="aboutpagediv">
+		<h1> About Me </h1>
+		aoisdjfoiweajfoija
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		lmaochekcoverflow
+	</div>
+	
+	<!--Exp Screen-->
+	<div class="initialhidden" id="exppagediv">
+		exppagediv
+	</div>
+	
+	<!--Project Screen-->
+	<div class="initialhidden" id="projectpagediv">
+		projectpage
+	</div>
+	
+	
 </body>
 
 
