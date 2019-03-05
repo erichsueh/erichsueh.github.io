@@ -34,6 +34,8 @@ a:hover{
 	background-image: url("Images/a10.jpg");
 	color:#F1F1F1;
 	background-size:cover;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
 }
 
 .colourgrey{
@@ -61,8 +63,12 @@ a:hover{
 	margin:10px;
 	text-decoration:none;
 	font-size:20px;
-	
 }
+
+.linkstyling:hover{
+	cursor: pointer;
+}
+
 
 .importantlink{
 	border-style:solid;
@@ -104,5 +110,6 @@ a:hover{
 	color:#61D6FF;
 }
 
-.contactBtnclass{
+.initialhidden{
+	display:none;
 }

@@ -19,28 +19,28 @@
 	<script>
 	$(document).ready(function(){
 		$("#homebutton").click(function(){
-			$("#homediv").fadeIn();
-			$("#test2").fadeOut(.01);
-			$("#test3").fadeOut(.01);
-			$("#test3").fadeOut(.01);
+			$("#homepagediv").fadeIn(300);
+			$("#aboutpagediv").fadeOut(.01);
+			$("#exppagediv").fadeOut(.01);
+			$("#projectpagediv").fadeOut(.01);
 		});
-		$(".btn2").click(function(){
-			$("#test2").fadeOut(.01);
-			$("#test3").fadeIn();
-			$("#test1").fadeOut(.01);
-			$("#test3").fadeOut(.01);
+		$("#aboutbutton").click(function(){
+			$("#homepagediv").fadeOut(.01);
+			$("#aboutpagediv").fadeIn(300);
+			$("#exppagediv").fadeOut(.01);
+			$("#projectpagediv").fadeOut(.01);
 		});
-		$(".btn3").click(function(){
-			$("#test3").fadeOut(.01);
-			$("#test2").fadeOut(.01);
-			$("#test1").fadeIn();
-			$("#test3").fadeOut(.01);
+		$("#expbutton").click(function(){
+			$("#homepagediv").fadeOut(.01);
+			$("#aboutpagediv").fadeOut(.01);
+			$("#exppagediv").fadeIn(300);
+			$("#projectpagediv").fadeOut(.01);
 		});
-		$(".btn4").click(function(){
-			$("#test3").fadeOut(.01);
-			$("#test2").fadeOut(.01);
-			$("#test1").fadeOut(.01);
-			$("#test3").fadeIn();
+		$("#projectbutton").click(function(){
+			$("#homepagediv").fadeOut(.01);
+			$("#aboutpagediv").fadeOut(.01);
+			$("#exppagediv").fadeOut(.01);
+			$("#projectpagediv").fadeIn(300);
 		});
 	});
 	</script>
@@ -70,17 +70,20 @@
 	</div>
 	
 	<!--About Screen-->
-	<div id="aboutpagediv">
-		aboutpage
+	<div class="initialhidden" id="aboutpagediv">
+		<h1> About Me </h1>
+		aoisdjfoiweajfoija
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		lmaochekcoverflow
 	</div>
 	
 	<!--Exp Screen-->
-	<div id="exppagediv">
+	<div class="initialhidden" id="exppagediv">
 		exppagediv
 	</div>
 	
 	<!--Project Screen-->
-	<div id="projectpagediv">
+	<div class="initialhidden" id="projectpagediv">
 		projectpage
 	</div>
 	
