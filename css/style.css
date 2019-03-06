@@ -69,6 +69,15 @@ a:hover{
 	cursor: pointer;
 }
 
+.linstyleclicked{
+	color:#61D6FF;
+}
+
+.linstyleclicked:hover{
+	color:#61D6FF;
+	cursor: default;
+}
+
 
 .importantlink{
 	border-style:solid;
