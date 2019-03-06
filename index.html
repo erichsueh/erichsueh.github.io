@@ -19,24 +19,40 @@
 	<script>
 	$(document).ready(function(){
 		$("#homebutton").click(function(){
+			$("#homebutton").addClass("linstyleclicked");
+			$("#aboutbutton").removeClass("linstyleclicked");
+			$("#expbutton").removeClass("linstyleclicked");
+			$("#projectbutton").removeClass("linstyleclicked");
 			$("#homepagediv").fadeIn(300);
 			$("#aboutpagediv").fadeOut(.01);
 			$("#exppagediv").fadeOut(.01);
 			$("#projectpagediv").fadeOut(.01);
 		});
 		$("#aboutbutton").click(function(){
+			$("#homebutton").removeClass("linstyleclicked");
+			$("#aboutbutton").addClass("linstyleclicked");
+			$("#expbutton").removeClass("linstyleclicked");
+			$("#projectbutton").removeClass("linstyleclicked");
 			$("#homepagediv").fadeOut(.01);
 			$("#aboutpagediv").fadeIn(300);
 			$("#exppagediv").fadeOut(.01);
 			$("#projectpagediv").fadeOut(.01);
 		});
 		$("#expbutton").click(function(){
+			$("#homebutton").removeClass("linstyleclicked");
+			$("#aboutbutton").removeClass("linstyleclicked");
+			$("#expbutton").addClass("linstyleclicked");
+			$("#projectbutton").removeClass("linstyleclicked");
 			$("#homepagediv").fadeOut(.01);
 			$("#aboutpagediv").fadeOut(.01);
 			$("#exppagediv").fadeIn(300);
 			$("#projectpagediv").fadeOut(.01);
 		});
 		$("#projectbutton").click(function(){
+			$("#homebutton").removeClass("linstyleclicked");
+			$("#aboutbutton").removeClass("linstyleclicked");
+			$("#expbutton").removeClass("linstyleclicked");
+			$("#projectbutton").addClass("linstyleclicked");
 			$("#homepagediv").fadeOut(.01);
 			$("#aboutpagediv").fadeOut(.01);
 			$("#exppagediv").fadeOut(.01);
@@ -51,7 +67,7 @@
 	<div id="resumeModal"></div>
 	<div class="navbar">
 		<div style="margin-top:34px;" align="right">
-			<a id="homebutton" class="colourgrey linkstyling">Home</a>
+			<a id="homebutton" class="colourgrey linkstyling linstyleclicked">Home</a>
 			<a id="aboutbutton" class="colourgrey linkstyling">About</a>
 			<button class="buttonstyling" onclick="openContact()">Contact</button>
 			<a id="expbutton" class="colourgrey linkstyling">Experience</a>
@@ -71,10 +87,19 @@
 	
 	<!--About Screen-->
 	<div class="initialhidden" id="aboutpagediv">
-		<h1> About Me </h1>
-		aoisdjfoiweajfoija
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		lmaochekcoverflow
+		<h1> Eric Hsueh </h1>
+		
+		#Hobbies
+		- Badminton
+		- Swimming
+		- Video Games
+		- Amature Art
+		- Photo/Video Editing
+		<iframe width="1280" height="720" src="https://www.youtube.com/embed/GFaRWphz8O0"></iframe>
+		#Education
+		Brief overview of courses taken
+		Comp Sci Courses
+		
 	</div>
 	
 	<!--Exp Screen-->
