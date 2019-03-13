@@ -3,6 +3,10 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 @media(max-width: 1100px) {
 	body{
 		background-size:inherit;
@@ -162,4 +166,8 @@ a:hover{
 
 .backgroundblock{
 	background-color:rgba(0,0,0,.75);
+}
+
+.scrolling{
+	scroll-behavior: smooth;
 }
