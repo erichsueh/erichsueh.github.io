@@ -133,7 +133,8 @@ a:hover{
 
 .title{
 	font-size:35px;
-	padding-top:30px;
+	padding-top:15%;
+	padding-bottom:15%;
 }
 
 .subtitle{
@@ -165,9 +166,9 @@ a:hover{
 }
 
 .backgroundblock{
-	background-color:rgba(0,0,0,.75);
+	
 }
 
-.scrolling{
-	scroll-behavior: smooth;
+.floatnav{
+	position:fixed;
 }

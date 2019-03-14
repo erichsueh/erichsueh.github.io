@@ -61,6 +61,42 @@
 	});
 	</script>
 	
+	<script>
+		$(window).scroll(function(){;
+			topnum = Math.floor( $(window).scrollTop() ) +($(window).height()/2);
+			$('.changecolor').css( 'background-color', '' ); 
+			if((topnum<=$('#NexoneExp').offset().top))
+			{
+				$('#WorkBut').css( 'background-color', 'red' );
+			}
+			if((topnum<=$('#YMCAExp').offset().top)&&( topnum>=$('#NexoneExp').offset().top))
+			{
+				$('#NexBut').css( 'background-color', 'green' );   
+			}
+			if((topnum<=$('#NCHCExp').offset().top)&&( topnum>=$('#YMCAExp').offset().top))
+			{
+				$('#YMCABut').css( 'background-color', 'green' );   
+			}
+			if((topnum<=$('#VolExp').offset().top)&&( topnum>=$('#NCHCExp').offset().top))
+			{
+				$('#NCHCBut').css( 'background-color', 'green' );   
+			}
+			if((topnum<=$('#HosExp').offset().top)&&( topnum>=$('#VolExp').offset().top))
+			{
+				$('#VolBut').css( 'background-color', 'green' );   
+			}
+			if((topnum<=$('#KingExp').offset().top)&&( topnum>=$('#HosExp').offset().top))
+			{
+				$('#HosBut').css( 'background-color', 'green' );   
+			}
+			if((topnum<=$('#BotExp').offset().top)&&( topnum>=$('#KingExp').offset().top))
+			{
+				$('#KingBut').css( 'background-color', 'green' );   
+			}
+ 
+}); 
+	</script>
+	
 </head>
 <body class="homebg">
 	<div id="contactModal"></div>
@@ -149,17 +185,17 @@
 	</div>
 	
 	<!--Exp Screen-->
-	<div align="center" class="initialhidden backgroundblock" id="exppagediv">
-		<div>
-			<a href="#WorkExp">Work Experience</a>
-			<a href="#NexoneExp">Work Experience</a>
-			<a href="#YMCAExp">Work Experience</a>
-			<a href="#NCHCExp">Work Experience</a>
-			<a href="#VolExp">Work Experience</a>
-			<a href="#HosExp">Work Experience</a>
-			<a href="#KingExp">Work Experience</a>
+	<div align="center" class="initialhidden backgroundblock scrolling" id="exppagediv">
+		<div class="floatnav">
+			<a id="WorkBut" href="#WorkExp" class="changecolor">Work Experience</a>
+			<a id="NexBut" href="#NexoneExp" class="changecolor">Nexone</a>
+			<a id="YMCABut" href="#YMCAExp" class="changecolor">YMCA</a>
+			<a id="NCHCBut" href="#NCHCExp" class="changecolor">NCHC</a>
+			<a id="VolBut" href="#VolExp" class="changecolor">Volunteering</a>
+			<a id="HosBut" href="#HosExp" class="changecolor">University Of Alberta Hospital</a>
+			<a id="KingBut" href="#KingExp" class="changecolor">Kings University</a>
 		</div>
-		<div class="scrolling">
+		<div>
 			<h2 id="WorkExp" align="left" class="title">Work Experience</h2>
 			<div id="NexoneExp" align="left" style="background:url('css/Images/nexone.png');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;" class="subblock">
 				<h3 class="subtitle">Nexone Programmer</h3>
@@ -187,6 +223,8 @@
 			<div id="KingExp" align="left" style="background:url('css/Images/kings.jpg');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;" class="subblock">
 				<h3 class="subtitle">Kings University</h3>
 				<p class="subparagraph">William Lutsky</p>
+			</div>
+			<div id="BotExp" class="title">
 			</div>
 		</div>
 	</div>
