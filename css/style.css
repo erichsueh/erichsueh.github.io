@@ -34,6 +34,8 @@ a:hover{
 	color:#61D6FF;
 }
 
+
+
 .homebg{
 	background-image: url("Images/a10.jpg");
 	color:#F1F1F1;
@@ -171,4 +173,19 @@ a:hover{
 
 .floatnav{
 	position:fixed;
+	
+}
+
+.changecolor{
+	text-decoration:none;
+	color:#F1F1F1;
+}
+
+.changecolor:hover{
+	text-decoration:none;
+	color:#61D6FF;
+}
+
+.changecolor:visited{
+	text-decoration:none;
 }

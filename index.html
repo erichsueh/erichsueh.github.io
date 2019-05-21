@@ -64,34 +64,34 @@
 	<script>
 		$(window).scroll(function(){;
 			topnum = Math.floor( $(window).scrollTop() ) +($(window).height()/2);
-			$('.changecolor').css( 'background-color', '' ); 
+			$('.changecolor').css( 'color', '' ); 
 			if((topnum<=$('#NexoneExp').offset().top))
 			{
-				$('#WorkBut').css( 'background-color', 'red' );
+				$('#WorkBut').css( 'color', '#61D6FF' );
 			}
 			if((topnum<=$('#YMCAExp').offset().top)&&( topnum>=$('#NexoneExp').offset().top))
 			{
-				$('#NexBut').css( 'background-color', 'green' );   
+				$('#NexBut').css( 'color', '#61D6FF' );   
 			}
 			if((topnum<=$('#NCHCExp').offset().top)&&( topnum>=$('#YMCAExp').offset().top))
 			{
-				$('#YMCABut').css( 'background-color', 'green' );   
+				$('#YMCABut').css( 'color', '#61D6FF' );   
 			}
 			if((topnum<=$('#VolExp').offset().top)&&( topnum>=$('#NCHCExp').offset().top))
 			{
-				$('#NCHCBut').css( 'background-color', 'green' );   
+				$('#NCHCBut').css( 'color', '#61D6FF' );   
 			}
 			if((topnum<=$('#HosExp').offset().top)&&( topnum>=$('#VolExp').offset().top))
 			{
-				$('#VolBut').css( 'background-color', 'green' );   
+				$('#VolBut').css( 'color', '#61D6FF' );   
 			}
 			if((topnum<=$('#KingExp').offset().top)&&( topnum>=$('#HosExp').offset().top))
 			{
-				$('#HosBut').css( 'background-color', 'green' );   
+				$('#HosBut').css( 'color', '#61D6FF' );   
 			}
 			if((topnum<=$('#BotExp').offset().top)&&( topnum>=$('#KingExp').offset().top))
 			{
-				$('#KingBut').css( 'background-color', 'green' );   
+				$('#KingBut').css( 'color', '#61D6FF' );   
 			}
  
 }); 
@@ -186,14 +186,14 @@
 	
 	<!--Exp Screen-->
 	<div align="center" class="initialhidden backgroundblock scrolling" id="exppagediv">
-		<div class="floatnav">
-			<a id="WorkBut" href="#WorkExp" class="changecolor">Work Experience</a>
-			<a id="NexBut" href="#NexoneExp" class="changecolor">Nexone</a>
-			<a id="YMCABut" href="#YMCAExp" class="changecolor">YMCA</a>
-			<a id="NCHCBut" href="#NCHCExp" class="changecolor">NCHC</a>
-			<a id="VolBut" href="#VolExp" class="changecolor">Volunteering</a>
-			<a id="HosBut" href="#HosExp" class="changecolor">University Of Alberta Hospital</a>
-			<a id="KingBut" href="#KingExp" class="changecolor">Kings University</a>
+		<div align="left" class="floatnav">
+			<a id="WorkBut" href="#WorkExp" class="changecolor">Work Experience</a><br>
+			<a id="NexBut" href="#NexoneExp" class="changecolor">Nexone</a><br>
+			<a id="YMCABut" href="#YMCAExp" class="changecolor">YMCA</a><br>
+			<a id="NCHCBut" href="#NCHCExp" class="changecolor">NCHC</a><br>
+			<a id="VolBut" href="#VolExp" class="changecolor">Volunteering</a><br>
+			<a id="HosBut" href="#HosExp" class="changecolor">University Of Alberta Hospital</a><br>
+			<a id="KingBut" href="#KingExp" class="changecolor">Kings University</a><br>
 		</div>
 		<div>
 			<h2 id="WorkExp" align="left" class="title">Work Experience</h2>
