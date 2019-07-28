@@ -175,7 +175,9 @@ a:hover{
 	position:fixed;
 	right:50px;
 	line-height:2.9;
-	background-color:rgba(1,1,1,.4);
+	background-color:rgba(1,1,1,.6);
+	padding-left:4px;
+	border-left:1px solid white;
 }
 
 .changecolor{
