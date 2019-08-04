@@ -75,6 +75,8 @@ a:hover{
 
 .linkstyling:hover{
 	cursor: pointer;
+	color:#61D6FF;
+	text-decoration:none;
 }
 
 .linstyleclicked{
@@ -84,6 +86,7 @@ a:hover{
 .linstyleclicked:hover{
 	color:#61D6FF;
 	cursor: default;
+	text-decoration:none;
 }
 
 
