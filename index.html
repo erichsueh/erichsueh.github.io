@@ -14,8 +14,8 @@
       $("#contactModal").load("crmodal.html");
 	  $("#carouselnexone").load("carouselnexone.html");
 	  $("#aboutMeModel").load("aboutme.html");
-	  $("#contactModal").load("workexp.html");
-	  $("#contactModal").load("projectexp.html");
+	  $("#workexpModal").load("workexp.html");
+	  $("#projexpModal").load("projectexp.html");
     });
     </script> 
 	
@@ -65,41 +65,6 @@
 	});
 	</script>
 	
-	<script>
-		$(window).scroll(function(){;
-			topnum = Math.floor( $(window).scrollTop() ) +($(window).height()/2);
-			$('.changecolor').css( 'color', '' ); 
-			if((topnum<=$('#NexoneExp').offset().top))
-			{
-				$('#WorkBut').css( 'color', '#61D6FF' );
-			}
-			if((topnum<=$('#YMCAExp').offset().top)&&( topnum>=$('#NexoneExp').offset().top))
-			{
-				$('#NexBut').css( 'color', '#61D6FF' );   
-			}
-			if((topnum<=$('#NCHCExp').offset().top)&&( topnum>=$('#YMCAExp').offset().top))
-			{
-				$('#YMCABut').css( 'color', '#61D6FF' );   
-			}
-			if((topnum<=$('#VolExp').offset().top)&&( topnum>=$('#NCHCExp').offset().top))
-			{
-				$('#NCHCBut').css( 'color', '#61D6FF' );   
-			}
-			if((topnum<=$('#HosExp').offset().top)&&( topnum>=$('#VolExp').offset().top))
-			{
-				$('#VolBut').css( 'color', '#61D6FF' );   
-			}
-			if((topnum<=$('#KingExp').offset().top)&&( topnum>=$('#HosExp').offset().top))
-			{
-				$('#HosBut').css( 'color', '#61D6FF' );   
-			}
-			if((topnum<=$('#BotExp').offset().top)&&( topnum>=$('#KingExp').offset().top))
-			{
-				$('#KingBut').css( 'color', '#61D6FF' );   
-			}
- 
-}); 
-	</script>
 	
 </head>
 <body class="homebg">
@@ -127,56 +92,10 @@
 	
 	<div id="aboutMeModel"></div>
 	
+	<div id="workexpModal"></div>
 	
-	<!--Exp Screen-->
-	<div align="center" class="initialhidden backgroundblock scrolling" id="exppagediv">
-		<div align="left" class="floatnav">
-			<a id="WorkBut" href="#WorkExp" class="changecolor">Work Experience</a><br>
-			<a id="NexBut" href="#NexoneExp" class="changecolor">Nexone</a><br>
-			<a id="YMCABut" href="#YMCAExp" class="changecolor">YMCA</a><br>
-			<a id="NCHCBut" href="#NCHCExp" class="changecolor">NCHC</a><br>
-			<a id="VolBut" href="#VolExp" class="changecolor">Volunteering</a><br>
-			<a id="HosBut" href="#HosExp" class="changecolor">University Of Alberta Hospital</a><br>
-			<a id="KingBut" href="#KingExp" class="changecolor">Kings University</a><br>
-		</div>
-		<div>
-			<h2 id="WorkExp" align="middle" class="title">Work Experience</h2>
-			<div id="NexoneExp" align="left" style="background:url('css/Images/nexone.png');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;" class="subblock">
-				<h3 class="subtitle">Nexone Programmer</h3>
-				<p class="subparagraph">Nexone, a Canadian based paperless solution for the real estate market, is geared towards agents, brokerages, and even admins.</p>
-				<div id="carouselnexone"></div>
-				create carousel for all pictures of each website, repree.com nexone.ca 
-			<div id="YMCAExp" align="left" style="background:url('css/Images/williamlutsky.jpg');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;" class="subblock">
-				<div style="background-color:rgba(24,23,24,.8);">
-				<h3 class="subtitle">YMCA</h3>
-				<p class="subparagraph">Tong Louie</p>
-				<p class="subparagraph">William Lutsky</p>
-				test test test test test
-				</div>
-			</div>
-			<div id="NCHCExp" align="left" style="background:url('css/Images/nchc.jpeg');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;" class="subblock">
-				<h3 class="subtitle">NCHC</h3>
-				<p class="subparagraph">> project images?</p>
-			</div>
-		
-			<h2 id="VolExp" align ="middle" class="title">Volunteering</h2>
-			<div id="HosExp" align="left" style="background:url('css/Images/uahos.jpg');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;" class="subblock">
-				<h3 class="subtitle">Hospital Gift Shop</h3>
-				<p class="subparagraph">William Lutsky</p>
-			</div>
-			<div id="KingExp" align="left" style="background:url('css/Images/kings.jpg');background-size:cover;background-attachment:fixed;background-repeat:no-repeat;" class="subblock">
-				<h3 class="subtitle">Kings University</h3>
-				<p class="subparagraph">William Lutsky</p>
-			</div>
-			<div id="BotExp" class="title">
-			</div>
-		</div>
-	</div>
-	
-	<!--Project Screen-->
-	<div class="initialhidden" id="projectpagediv">
-		projectpage
-	</div>
+	<div id="projexpModal"></div>
+
 	
 	
 </body>
