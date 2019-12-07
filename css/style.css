@@ -196,3 +196,7 @@ a:hover{
 .changecolor:visited{
 	text-decoration:none;
 }
+
+.carouselpadding{
+	padding-bottom:100%;
+}
