@@ -197,6 +197,8 @@ a:hover{
 	text-decoration:none;
 }
 
-.carouselpadding{
-	padding-bottom:100%;
+
+.carouselimghover:hover{
+	opacity:.6;
+	
 }
