@@ -181,6 +181,7 @@ a:hover{
 	background-color:rgba(1,1,1,.6);
 	padding-left:4px;
 	border-left:1px solid white;
+	z-position:100;
 }
 
 .changecolor{
@@ -199,6 +200,6 @@ a:hover{
 
 
 .carouselimghover:hover{
-	opacity:.6;
+	opacity:.9;
 	
 }
