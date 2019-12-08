@@ -195,7 +195,7 @@ a:hover{
 	color:#61D6FF;
 }
 
-.changecolor:visited{
+.changecolor:visited:focus{
 	text-decoration:none;
 }
 
