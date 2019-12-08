@@ -190,6 +190,10 @@ a:hover{
 	color:#F1F1F1;
 }
 
+.workexpnavminipadding{
+	padding-left:10px;
+}
+
 .changecolor:hover{
 	text-decoration:none;
 	color:#61D6FF;
