@@ -191,7 +191,11 @@ a:hover{
 }
 
 .workexpnavminipadding{
-	padding-left:10px;
+	padding-left:15px;
+}
+
+.workexpnavlargecss{
+	font-weight:bold;
 }
 
 .changecolor:hover{
