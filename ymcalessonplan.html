@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The biggest boatload of horseporn yet (Made by Eric Hsueh)</title>
+<style>
+.greylabel {
+border-bottom-style:solid;
+background-color:#e5e7ea;
+margin-top:0px;
+padding-top:5px;
+padding-bottom:5px;
+margin-bottom:0px;
+}
+.underline {
+border-bottom-style:solid;
+margin-top:0px;
+margin-bottom:0px;
+}
+</style>
+</head>
+
+<form action="javascript:;" onsubmit="myFunction()">
+	<select id = "skill" name = "Skill">
+		<option value="FG">Front Glide</option>
+		<option value="BG">Back Glide</option>
+		<option value="FS">Front Swim</option>
+		<option value="BS">Back Swim</option>
+	</select>
+	<input type = "submit">
+</form>
+<h1> Short Term Lesson Plan </h1>
+<div style= "border-color:black;border-style:solid">
+<p class ="greylabel">Intro 3min. Song or Game with Aim</p>
+
+<p id="gameorsong1" class="underline"></p>
+
+<p class ="greylabel"><span>Goal (What do you want to achieve): </span><span id = "goal"></span></p>
+
+<p class ="greylabel"><span>Progression (10-15min): </span><span id = prog></span></p>
+
+
+<p class ="greylabel">VISUAL</p>
+<p class ="underline">
+<span>Activity Name (X3):</span>
+<br>
+<span>Description of Activity</span>
+<br>
+<span id = "visual"></span>
+</p>
+
+<p class ="greylabel">AUDIO</p>
+<p class ="underline">
+<span>Activity Name (X3):</span>
+<br>
+<span>Description of Activity</span>
+<br>
+<span id = "audio"></span>
+</p>
+
+<p class ="greylabel">TACTILE/KINESTHETIC</p>
+<p class ="underline">
+<span>Activity Name (X3):</span>
+<br>
+<span>Description of Activity</span>
+<br>
+<span id = "tac"></span>
+</p>
+
+<p class ="greylabel">OPTIONAL ITEM(S)</p>
+<p class ="underline">
+<span>Activity Name (X3):</span>
+<br>
+<span>Description of Activity</span>
+<br>
+<span id = "optional"></span>
+</p>
+
+<p class ="greylabel">WRAP UP ACTIVITY or SONG/GAME with AIM(3-5min)</p>
+<p id="gameorsong2" class="underline"></p>
+
+<p class ="greylabel">MODIFICATIONS</p>
+<p id = "mods" class="underline"><br><br></p>
+
+<p class ="greylabel">EQUIPMENT NEEDED</p>
+<p id = "equipt" class="underline"></p>
+
+<p id = "date">Progam Made by: Eric Hsueh (I dont actually like horseporn, that was a joke)</p>
+</div>
+<script>
+
+function myFunction(){
+var sel = document.getElementById('skill');
+var opt = sel.options[sel.selectedIndex];
+console.log( sel.value =="FG" );
+console.log( opt.text );
+
+var games = [
+"Tiny Turtle", 
+"Chop Chop Timber", 
+"Purple Stew"]
+
+var optional = ["logroll",
+"lifejacket swim",
+"treading water"]
+
+var equipt = ["Marshmellows",
+"Noodles",
+"Lifejackets",
+"Rings"]
+
+//front visual glide array
+var frontvg = ["Ring watchers: Put rings on bottom and let them watch while swimming",
+" ",
+" "]
+
+//front audio glide array
+var frontag = [" ",
+" ",
+" "]
+
+//front kinestetic glide array
+var frontkg = [" ",
+" ",
+" "]
+
+//front visual swim array
+var frontvs = [" ",
+" ",
+" "]
+
+//front audio swim array
+var frontas = [" ",
+" ",
+" "]
+
+//front kinestetic swim array
+var frontks = [" ",
+" ",
+" "]
+
+//back visual glide array
+var backvg = [" ",
+" ",
+" "]
+
+//back audio glide array
+var backag = ["bakckcc",
+" ",
+" "]
+
+//back kinestetic glide array
+var backkg = [" ",
+" ",
+" "]
+
+//back visual swim array
+var backvs = [" ",
+" ",
+" "]
+
+//back audio swim array
+var backas = [" ",
+" ",
+" "]
+
+//back kinestetic swim array
+var backks = [" ",
+" ",
+" "]
+
+
+var random = Math.floor(Math.random() * games.length);
+document.getElementById("gameorsong1").innerHTML = games[random];
+games.splice(random,1);
+var random = Math.floor(Math.random() * games.length);
+document.getElementById("gameorsong2").innerHTML = games[random];
+
+document.getElementById("goal").innerHTML = opt.text;
+
+if(sel.value =="FG"){
+document.getElementById("prog").innerHTML = "Bubbles -> Front Float -> Kick -> Front Glide";
+
+var random = Math.floor(Math.random() * frontvg.length);
+var stringy1 = frontvg[random];
+frontvg.splice(random,1);
+var random = Math.floor(Math.random() * frontvg.length);
+var stringy2 = frontvg[random];
+frontvg.splice(random,1);
+var random = Math.floor(Math.random() * frontvg.length);
+var stringy3 = frontvg[random];
+frontvg.splice(random,1);
+document.getElementById("visual").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+var random = Math.floor(Math.random() * frontag.length);
+var stringy1 = frontag[random];
+frontag.splice(random,1);
+var random = Math.floor(Math.random() * frontag.length);
+var stringy2 = frontag[random];
+frontag.splice(random,1);
+var random = Math.floor(Math.random() * frontag.length);
+var stringy3 = frontag[random];
+frontag.splice(random,1);
+document.getElementById("audio").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+var random = Math.floor(Math.random() * frontkg.length);
+var stringy1 = frontkg[random];
+frontkg.splice(random,1);
+var random = Math.floor(Math.random() * frontkg.length);
+var stringy2 = frontkg[random];
+frontkg.splice(random,1);
+var random = Math.floor(Math.random() * frontkg.length);
+var stringy3 = frontkg[random];
+frontkg.splice(random,1);
+document.getElementById("tac").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+}
+
+else if(sel.value=="BG"){
+document.getElementById("prog").innerHTML = "Head back -> Back Float -> Kick -> Back Glide";
+
+var random = Math.floor(Math.random() * backvg.length);
+var stringy1 = backvg[random];
+backvg.splice(random,1);
+var random = Math.floor(Math.random() * backvg.length);
+var stringy2 = backvg[random];
+backvg.splice(random,1);
+var random = Math.floor(Math.random() * backvg.length);
+var stringy3 = backvg[random];
+backvg.splice(random,1);
+document.getElementById("visual").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+var random = Math.floor(Math.random() * backag.length);
+var stringy1 = backag[random];
+backag.splice(random,1);
+var random = Math.floor(Math.random() * backag.length);
+var stringy2 = backag[random];
+backag.splice(random,1);
+var random = Math.floor(Math.random() * backag.length);
+var stringy3 = backag[random];
+backag.splice(random,1);
+document.getElementById("audio").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+var random = Math.floor(Math.random() * backkg.length);
+var stringy1 = backkg[random];
+backkg.splice(random,1);
+var random = Math.floor(Math.random() * backkg.length);
+var stringy2 = backkg[random];
+backkg.splice(random,1);
+var random = Math.floor(Math.random() * backkg.length);
+var stringy3 = backkg[random];
+backkg.splice(random,1);
+document.getElementById("tac").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+}
+
+else if(sel.value=="FS"){
+document.getElementById("prog").innerHTML = "Bubbles -> Front Float -> Kick -> Front Glide -> Arm Circles -> Front Swim";
+
+var random = Math.floor(Math.random() * frontvs.length);
+var stringy1 = frontvs[random];
+frontvs.splice(random,1);
+var random = Math.floor(Math.random() * frontvs.length);
+var stringy2 = frontvs[random];
+frontvs.splice(random,1);
+var random = Math.floor(Math.random() * frontvs.length);
+var stringy3 = frontvs[random];
+frontvs.splice(random,1);
+document.getElementById("visual").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+var random = Math.floor(Math.random() * frontas.length);
+var stringy1 = frontas[random];
+frontas.splice(random,1);
+var random = Math.floor(Math.random() * frontas.length);
+var stringy2 = frontas[random];
+frontas.splice(random,1);
+var random = Math.floor(Math.random() * frontas.length);
+var stringy3 = frontas[random];
+frontas.splice(random,1);
+document.getElementById("audio").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+var random = Math.floor(Math.random() * frontks.length);
+var stringy1 = frontks[random];
+frontks.splice(random,1);
+var random = Math.floor(Math.random() * frontks.length);
+var stringy2 = frontks[random];
+frontks.splice(random,1);
+var random = Math.floor(Math.random() * frontks.length);
+var stringy3 = frontks[random];
+frontks.splice(random,1);
+document.getElementById("tac").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+} 
+
+else if(sel.value=="BS"){
+document.getElementById("prog").innerHTML = "Head back -> Back Float -> Kick -> Back Glide -> Arm Circles -> Front Swim";
+
+var random = Math.floor(Math.random() * backvs.length);
+var stringy1 = backvs[random];
+backvs.splice(random,1);
+var random = Math.floor(Math.random() * backvs.length);
+var stringy2 = backvs[random];
+backvs.splice(random,1);
+var random = Math.floor(Math.random() * backvs.length);
+var stringy3 = backvs[random];
+backvs.splice(random,1);
+document.getElementById("visual").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+var random = Math.floor(Math.random() * backas.length);
+var stringy1 = backas[random];
+backas.splice(random,1);
+var random = Math.floor(Math.random() * backas.length);
+var stringy2 = backas[random];
+backas.splice(random,1);
+var random = Math.floor(Math.random() * backas.length);
+var stringy3 = backas[random];
+backas.splice(random,1);
+document.getElementById("audio").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+var random = Math.floor(Math.random() * backks.length);
+var stringy1 = backks[random];
+backks.splice(random,1);
+var random = Math.floor(Math.random() * backks.length);
+var stringy2 = backks[random];
+backks.splice(random,1);
+var random = Math.floor(Math.random() * backks.length);
+var stringy3 = backks[random];
+backks.splice(random,1);
+document.getElementById("tac").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+}
+
+//document.getElementById("visual").innerHTML = Math.floor(Math.random() * 13);
+//document.getElementById("audio").innerHTML = Math.floor(Math.random() * 13);
+//document.getElementById("tac").innerHTML = Math.floor(Math.random() * 13);
+
+var random = Math.floor(Math.random() * optional.length);
+var stringy1 = optional[random];
+optional.splice(random,1);
+var random = Math.floor(Math.random() * optional.length);
+var stringy2 = optional[random];
+optional.splice(random,1);
+var random = Math.floor(Math.random() * optional.length);
+var stringy3 = optional[random];
+optional.splice(random,1);
+document.getElementById("optional").innerHTML = stringy1+" | "+stringy2+" | "+stringy3;
+
+
+//document.getElementById("mods").innerHTML = Math.floor(Math.random() * 13);
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+document.getElementById("date").innerHTML="Date made: "+ date;
+document.getElementById("equipt").innerHTML = equipt[Math.floor(Math.random() * equipt.length)];
+}
+</script>
+
+</html>
