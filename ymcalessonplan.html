@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>The biggest boatload of horseporn yet (Made by Eric Hsueh)</title>
+<title>(Generater Made by Eric Hsueh)</title>
 <style>
 .greylabel {
 border-bottom-style:solid;
@@ -18,7 +18,6 @@ margin-bottom:0px;
 }
 </style>
 </head>
-
 <form action="javascript:;" onsubmit="myFunction()">
 	<select id = "skill" name = "Skill">
 		<option value="FG">Front Glide</option>
@@ -84,7 +83,7 @@ margin-bottom:0px;
 <p class ="greylabel">EQUIPMENT NEEDED</p>
 <p id = "equipt" class="underline"></p>
 
-<p id = "date">Progam Made by: Eric Hsueh (I dont actually like horseporn, that was a joke)</p>
+<p id = "date">Progam Made by: Eric Hsueh </p>
 </div>
 <script>
 
@@ -96,7 +95,31 @@ console.log( opt.text );
 
 var games = [
 "Tiny Turtle", 
-"Chop Chop Timber", 
+"Chop Chop Timber",
+"Birthday candles",
+"Noisy bubbles",
+"Animal bubbles",
+"-	Treasure hunt",
+"-	Slide",
+"-	Jumping in",
+"-	Tornado bobs (bob, spin, up)",
+"-	Underwater photoshoot",
+"-	Themed bobs",
+"-	Follow the leader",
+"-	Simon says",
+"-	Purple stew",
+"-	5 little monkeys",
+"-	Frankenstein",
+"-	Bob story",
+"-	Deep end pole (climb down)", 
+"-	Look for things at the bottom of the pool",
+"-	Make a cake",
+"-	Alice the Camel",
+"-	If you’re happy and you know it",
+"-	This is the way…",
+"-	Bulldozer (push toys with noodle, face in water, feet on floor)",
+"-	Listen to the fish",
+"-	Eye spy on the bottom of the pool",
 "Purple Stew"]
 
 var optional = ["logroll",
@@ -110,63 +133,139 @@ var equipt = ["Marshmellows",
 
 //front visual glide array
 var frontvg = ["Ring watchers: Put rings on bottom and let them watch while swimming",
-" ",
-" "]
+"Redlight Green Light with lifejackets and animals",
+"-	Superman/superhero",
+"-	Reach for the stars",
+"-	I spy with mats",
+"-	Be a pencil",
+"-	Put rings on bottom, look at them while you front glide",
+"-	Rescue the toys – floaty toys out, kids front glide to “rescue the pets”",
+"-	Glide through hoop",
+"-	Rocket ship",
+"Hulahoop Swim",
+"Ring Relay- visual-tactile",
+"Kids front glide with rings to flags drop the rings then return to the wall then after front glide back to get the rings"]
 
 //front audio glide array
-var frontag = [" ",
-" ",
-" "]
+var frontag = ["Humming torpedos",
+"Pepsi cola 7-up",
+"Talk to the fish",
+"-	Salmon says",
+"-	Squeeze your ears so you can’t hear",
+"-	Rocket ship",
+"-	1, 2, 3 penguin"]
 
 //front kinestetic glide array
-var frontkg = [" ",
-" ",
-" "]
+var frontkg = ["Bucket Head",
+"Ring holding",
+"-	Rings between arms and ears",
+"-	Ring in hands to keep hands together",
+"-	Bulldozer with noodle to collect toys",
+"-	Put ring on back",
+"Noodle kick",
+"Ball chin- tactile",
+"Get kids to place balls plastic balls between their chins so so that they can focus on looking down",
+]
 
 //front visual swim array
-var frontvs = [" ",
-" ",
-" "]
+var frontvs = ["Windmill Arms",
+"Ring watchers: Put rings on bottom and let them watch while swimming",
+"Fingertip Drag",
+"Ring watchers: Put rings on bottom and let them watch while swimming",
+"Redlight Green Light with lifejackets and animals",
+"-	Superman/superhero",
+"-	Reach for the stars",
+"-	I spy with mats",
+"-	Be a pencil",
+"-	Put rings on bottom, look at them while you front glide",
+"-	Rescue the toys – floaty toys out, kids front glide to “rescue the pets”",
+"-	Glide through hoop",
+"-	Rocket ship"]
 
 //front audio swim array
-var frontas = [" ",
-" ",
-" "]
+var frontas = ["Humming Swimmers?",
+"Humming torpedos",
+"Pepsi cola 7-up",
+"Talk to the fish",
+"-	Salmon says",
+"-	Squeeze your ears so you can’t hear",
+"-	Rocket ship",
+"-	1, 2, 3 penguin"]
 
 //front kinestetic swim array
-var frontks = [" ",
-" ",
-" "]
+var frontks = ["Chicken Swim",
+"Fingertip Drag",
+"Paddletime",
+"Ring holding",
+"-	Rings between arms and ears",
+"-	Ring in hands to keep hands together",
+"-	Bulldozer with noodle to collect toys",
+"-	Put ring on back",
+"Noodle kick"]
 
 //back visual glide array
-var backvg = [" ",
-" ",
-" "]
+var backvg = [" Under the bridge with a noodle",
+"Animal on head",
+"-	Everyone in the class makes a bridge, one student floats through – continuous",
+"-	Glide through hoop",
+"-	Rocket ship",
+"-	Spiderman",
+"-	Tsunami ",
+"-	Look at stickers on the ceiling",
+"-	Look at the flags",
+"-	Soldier arms",
+"-	Captain’s coming (point direction, kids flutter kick there)"]
 
 //back audio glide array
-var backag = ["bakckcc",
-" ",
-" "]
+var backag = ["-	Rocket ship",
+"-	Blast off",
+"-	Listen to the fish",
+"-	The floor is lava",
+"-	Zoom Zoom Zoom (song)",
+"-	Red light, green light",
+"-	Motor boat",
+"-	Ballerina legs"]
 
 //back kinestetic glide array
-var backkg = [" ",
-" ",
-" "]
+var backkg = ["-	Noodle limbo",
+"-	Glide racing, form focussed",
+"-	Shooting stars – follow jazz hands",
+"-	Put ring on tummy or forehead",
+"-	Feet on wall, push off",
+"-	Walk on tippy toes on deck, no bending knees",
+"-	Kicking on a mat"]
 
 //back visual swim array
-var backvs = [" ",
-" ",
-" "]
+var backvs = [" Under the bridge with a noodle",
+"Animal on head",
+"-	Everyone in the class makes a bridge, one student floats through – continuous",
+"-	Glide through hoop",
+"-	Rocket ship",
+"-	Spiderman",
+"-	Tsunami ",
+"-	Look at stickers on the ceiling",
+"-	Look at the flags",
+"-	Soldier arms",
+"-	Captain’s coming (point direction, kids flutter kick there)"]
 
 //back audio swim array
-var backas = [" ",
-" ",
-" "]
+var backas = ["-	Rocket ship",
+"-	Blast off",
+"-	Listen to the fish",
+"-	The floor is lava",
+"-	Zoom Zoom Zoom (song)",
+"-	Red light, green light",
+"-	Motor boat",
+"-	Ballerina legs"]
 
 //back kinestetic swim array
-var backks = [" ",
-" ",
-" "]
+var backks = ["-	Noodle limbo",
+"-	Glide racing, form focussed",
+"-	Shooting stars – follow jazz hands",
+"-	Put ring on tummy or forehead",
+"-	Feet on wall, push off",
+"-	Walk on tippy toes on deck, no bending knees",
+"-	Kicking on a mat"]
 
 
 var random = Math.floor(Math.random() * games.length);
