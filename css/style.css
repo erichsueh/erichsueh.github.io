@@ -150,11 +150,12 @@ a:hover{
 }
 
 .subparagraph{
-	padding-left:20px;
+	padding-left:00px;
 	padding-right:20px;
 	padding-bottom:20px;
 	margin-bottom:0px;
 	margin-top:0px;
+	padding-top:15px;
 }
 
 .mainblock{
@@ -169,7 +170,7 @@ a:hover{
 	padding-top:7%;
 	padding-right:7%;
 	padding-left:7%;
-	padding-bottom:20%;
+	padding-bottom:7%;
 }
 
 .backgroundblock{
