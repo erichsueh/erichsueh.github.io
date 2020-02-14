@@ -172,7 +172,7 @@ a:hover{
 	padding-right:7%;
 	padding-left:7%;
 	padding-bottom:7%;
-	
+	font-size:16px;
 }
 
 .backgroundblock{
@@ -188,6 +188,7 @@ a:hover{
 	padding-right:21px;
 	border-right:1px solid white;
 	z-index:100;
+	font-size:16px;
 }
 
 .changecolor{
