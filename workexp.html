@@ -59,7 +59,7 @@
 					<li>Converted to a tif file to print in a 3D machine</li>
 				</ul> <br>
 				<p class="subparagraph">
-					<img style="width:55%;" align="left" src="css/Images/nchc/figure_1.png" alt="miscellaneous ">
+					<img style="width:45%;" align="left" src="css/Images/nchc/figure_1.png" alt="miscellaneous ">
 					<br><br>NCHC or rather National Center for High-performance Computing is a place in Taiwan where one of the largest super computers are found.
 					I did a two month internship with them both learning about Taiwan's culture as well as learning how to code.
 					They assigned me one major project to complete within the two months which is to go from a dicom formatted (usually medical image) and turn that in to a 3D printable model
@@ -72,12 +72,20 @@
 					<br><br>As shown in the image to the left, this is the segmentation portion of the program, the program first turns the images into greyscale
 				</p>
 				<p class="subparagraph">
+					
 					<img style="width:100%;" src="css/Images/nchc/b1to5.png" alt="miscellaneous ">
+					The Image above is the sample set that I used for testing, 5 seperate brain images (technically one file) because Dicom files are a stack of images
+					<br> The image below is the output after running through my created program and then rendering it on MeshLab
 					<img style="width:100%;" src="css/Images/nchc/brainslice.png" alt="miscellaneous ">
 				</p>
 				<p class="subparagraph">
-					<img style="width:100%;" src="css/Images/nchc/MRI_blackandwhite.png" alt="miscellaneous ">
-					<img style="width:100%;" src="css/Images/nchc/skull.png" alt="miscellaneous ">
+					The images here are the final data set given. It involves an entire dicom file (about 200~ images) and then put through the program.
+					<br> It was stripped mostly of all the fleshy bits (which have a lower rbg value) and then the skull was rendered out by the program.
+					<img style="width:50%;" src="css/Images/nchc/MRI_blackandwhite.png" alt="miscellaneous ">
+					<img style="width:50%;" src="css/Images/nchc/skull.png" alt="miscellaneous ">
+				</p>
+				<p class="subparagraph">
+					<b>Key Pieces of Tech Used:</b> Python, Python packages, MeshLab, Dicom/Tiff
 				</p>
 				</div>
 			</div>
