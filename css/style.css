@@ -191,6 +191,15 @@ a:hover{
 	z-index:100;
 	font-size:16px;
 }
+/*Navbar mobile*/
+@media(max-width:800px){
+	.navbar{
+		text-align:center;
+	}
+	.logoimage{
+		margin-top:45px;
+	}
+}
 
 .changecolor{
 	text-decoration:none;
@@ -223,19 +232,13 @@ a:hover{
 .workexpmargin{
 	margin-left:280px;
 }
-
+/*workexp mobile*/
 @media(max-width: 700px) {
 	.workexpmargin{
 		margin-left:0px;
 	}
 	.floatnav{
 		display:none;
-	}
-	.navbar{
-		text-align:center;
-	}
-	.logoimage{
-		margin-top:0px;
 	}
 }
 
