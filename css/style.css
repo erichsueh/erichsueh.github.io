@@ -219,3 +219,17 @@ a:hover{
 	opacity:.9;
 	
 }
+
+.workexpmargin{
+	margin-left:280px;
+}
+
+@media(max-width: 700px) {
+	.workexpmargin{
+		margin-left:0px;
+	}
+	.floatnav{
+		display:none;
+	}
+}
+
