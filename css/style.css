@@ -231,5 +231,11 @@ a:hover{
 	.floatnav{
 		display:none;
 	}
+	.navbar{
+		text-align:center;
+	}
+	.logoimage{
+		margin-top:0px;
+	}
 }
 
