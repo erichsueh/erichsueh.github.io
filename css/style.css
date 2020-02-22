@@ -245,6 +245,6 @@ a:hover{
 
 /*PROJECT PAGE*/
 .projectimages{
-	background-size:contain;
+	background-size:contain !important;
 }
 
