@@ -242,3 +242,9 @@ a:hover{
 	}
 }
 
+
+/*PROJECT PAGE*/
+.projectimages{
+	background-size:contain;
+}
+
