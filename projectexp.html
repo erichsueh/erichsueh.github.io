@@ -42,6 +42,14 @@
   background-color: #666;
   color: white;
 }
+
+.blurbg:hover{
+	animation-name:blurthebg;
+}
+
+@keyframes blurthebg{
+	100%{filter:blur(8px);}
+}
 </style>
 <h2 id="WorkExp" align="middle" class="title">Projects</h2>
 	<div class="initialhidden" id="projectpagediv">
@@ -52,7 +60,7 @@
 		<br>
 
 		<div class="row">
-		  <div class="column" style="background-size:contain;background:url('css/Images/projects/paw.png');background-color:#aaa;">
+		  <div class="column blurbg" style="background-size:contain;background:url('css/Images/projects/paw.png');background-color:#aaa;">
 			<h2>AHAS</h2>
 			<p>Some text..</p>
 		  </div>
