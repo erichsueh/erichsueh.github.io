@@ -59,7 +59,7 @@
 	margin-top:0px;
 }
 
-.blurbg:hover{
+.blurbg{
 	animation-name:blurthebg;
 	animation-duration:1s;
 	animation-fill-mode:forwards;	
@@ -138,9 +138,8 @@
 
 function moverAhas(){
 console.log("test over");
-document.getElementById("ProjAhasBG").style.animation-duration = "1s";
-document.getElementById("ProjAhasBG").style.animation-name = "blurthebg";
-document.getElementById("ProjAhasBG").style.animation-fill-mode = "forwards";
+
+document.getElementById("ProjAhasBG").classList.add = "blurbg";
 console.log("wegethere");
 }
 function moutAhas(){
