@@ -114,24 +114,24 @@
 		</div>
 
 		<div class="row">
-		  <div class="column" style="background-color:#ccc;">
-			<div class="divstuff" style="background-size:contain;background:url('css/Images/projects/paw.png');background-color:#aaa;">
+		  <div id="ProjLife" onmouseover="moverLife()" onmouseout="moutLife()" class="column">
+			<div id="ProjBGLife" class="divstuff" style="background-size:contain;background:url('css/Images/projects/paw.png');background-color:#aaa;">
 			</div>
 			<div align="center" class="projectTbox" style="">
 				<h2 class="projectsecheader">Team Lifepoints</h2>
 				<p>Roomba Programming</p>
 			</div>
 		  </div>
-		  <div class="column" style="background-color:#ddd;">
-			<div class="divstuff" style="background-size:contain;background:url('css/Images/projects/paw.png');background-color:#aaa;">
+		  <div id="ProjFut" onmouseover="moverFut()" onmouseout="moutFut()" class="column">
+			<div id="ProjBGFut" class="divstuff" style="background-size:contain;background:url('css/Images/projects/paw.png');background-color:#aaa;">
 			</div>
 			<div align="center" class="projectTbox" style="">
 				<h2 class="projectsecheader">Future Projects</h2>
 				<p>Projects that are on the todo list</p>
 			</div>
 		  </div>
-			<div class="column" style="background-color:#bbb;">
-			<div class="divstuff" style="background-size:contain;background:url('css/Images/projects/paw.png');background-color:#aaa;">
+			<div id="ProjCon" onmouseover="moverCon()" onmouseout="moutCon()" class="column">
+			<div id="ProjBGCon" class="divstuff" style="background-size:contain;background:url('css/Images/projects/paw.png');background-color:#aaa;">
 			</div>
 			<div align="center" class="projectTbox" style="">
 				<h2 class="projectsecheader">Visual Recognition</h2>
@@ -182,6 +182,42 @@ function moutGit(){
 var bgahas = document.getElementById("ProjBGGit");
 bgahas.classList.remove("blurbg");
 }
+
+//Lifepoints
+function moverLife(){
+var bgahas = document.getElementById("ProjBGLife");
+bgahas.classList.add("blurbg");
+}
+
+function moutLife(){
+var bgahas = document.getElementById("ProjBGLife");
+bgahas.classList.remove("blurbg");
+}
+
+
+//FutureProjects
+function moverFut(){
+var bgahas = document.getElementById("ProjBGFut");
+bgahas.classList.add("blurbg");
+}
+
+function moutFut(){
+var bgahas = document.getElementById("ProjBGFut");
+bgahas.classList.remove("blurbg");
+}
+
+//Convolution Net
+function moverCon(){
+var bgahas = document.getElementById("ProjBGCon");
+bgahas.classList.add("blurbg");
+}
+
+function moutCon(){
+var bgahas = document.getElementById("ProjBGCon");
+bgahas.classList.remove("blurbg");
+}
+
+
 
 
 // Get the elements with class="column"
