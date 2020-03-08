@@ -86,7 +86,7 @@
 		<br>
 
 		<div class="row">
-		  <div id="ProjAhas" onmouseover="moverAhas()" onmouseout="moutAhas()" class="column">
+		  <div id="ProjAhas" onclick="clickAhas()" onmouseover="moverAhas()" onmouseout="moutAhas()" class="column">
 			<div id="ProjBGAhas" class="divstuff" style="background-size:contain;background:url('css/Images/projects/pawshrunk.png');background-color:#aaa;">
 			</div>
 			<div align="center" class="projectTbox" style="">
@@ -153,6 +153,9 @@ bgahas.classList.add("blurbg");
 function moutAhas(){
 var bgahas = document.getElementById("ProjBGAhas");
 bgahas.classList.remove("blurbg");
+
+function clickAhas(){
+console.log("CLICKED HAHAHS");
 }
 
 
