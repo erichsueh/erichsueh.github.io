@@ -48,6 +48,11 @@
 	height:400px;
 }
 
+.rightstyle{
+	width: calc(100% - 400px);
+	float:right;
+}
+
 .projectTbox{
 	margin-top:-87px;
 	z-index:100;
@@ -85,7 +90,7 @@
 		  <button class="btn active" onclick="gotogridView()"><i class="fa fa-th-large"></i> Grid</button>
 		</div>
 		<br>
-		<div id="ProjAll">
+		<div style = "float:left;" id="ProjAll">
 		<div class="row">
 		  <div id="ProjAhas" onclick="clickAhas()" onmouseover="moverAhas()" onmouseout="moutAhas()" class="column">
 			<div id="ProjBGAhas" class="divstuff" style="background-size:contain;background:url('css/Images/projects/pawshrunk.png');background-color:#aaa;background-position:center;">
@@ -140,7 +145,7 @@
 		  </div>
 		</div>
 		</div>
-		<div>
+		<div class="rightstyle">
 			<p>Test Where thsi goes</p>
 		</div>
 	</div>
