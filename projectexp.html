@@ -51,7 +51,6 @@
 .rightstyle{
 	width: calc(100% - 400px);
 	float:right;
-	display:none;
 }
 
 .projectTbox{
@@ -167,7 +166,7 @@ function moutAhas(){
 
 function clickAhas(){
 	console.log("CLICKED HAHAHS");
-	ahasview = document.getElementById("DescriptionAhas")
+	var ahasview = document.getElementById("DescriptionAhas");
 	if("none"==ahasview.style.display){
 		gotolistView();
 		ahasview.style.display = "inline"
@@ -237,10 +236,9 @@ function moutCon(){
 
 
 
-
+document.getElementById("DescriptionAhas").style.display = "none";
 // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
-
 // Declare a loop variable
 var i;
 
