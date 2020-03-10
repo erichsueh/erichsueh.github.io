@@ -155,75 +155,83 @@
 
 //AHAS SCRIPTS
 function moverAhas(){
-var bgahas = document.getElementById("ProjBGAhas");
-bgahas.classList.add("blurbg");
+	var bgahas = document.getElementById("ProjBGAhas");
+	bgahas.classList.add("blurbg");
 }
 
 function moutAhas(){
-var bgahas = document.getElementById("ProjBGAhas");
-bgahas.classList.remove("blurbg");
+	var bgahas = document.getElementById("ProjBGAhas");
+	bgahas.classList.remove("blurbg");
 }
 
 function clickAhas(){
-console.log("CLICKED HAHAHS");
-console.log("none"==document.getElementById("DescriptionAhas").display);
+	console.log("CLICKED HAHAHS");
+	ahasview = document.getElementById("DescriptionAhas")
+	if("none"==ahasview.display){
+		gotolistView();
+		ahasview.display = "inline"
+	}
+	else{
+		gotogridView();
+		ahasview.display = "none"
+	}
 }
 
 
 //UBER SCRIPTS
 function moverUBER(){
-var bgahas = document.getElementById("ProjBGUBER");
-bgahas.classList.add("blurbg");
+	var bgahas = document.getElementById("ProjBGUBER");
+	bgahas.classList.add("blurbg");
 }
 
 function moutUBER(){
-var bgahas = document.getElementById("ProjBGUBER");
-bgahas.classList.remove("blurbg");
+	var bgahas = document.getElementById("ProjBGUBER");
+	bgahas.classList.remove("blurbg");
 }
 
 //GITSCRIPTS
 function moverGit(){
-var bgahas = document.getElementById("ProjBGGit");
-bgahas.classList.add("blurbg");
+	var bgahas = document.getElementById("ProjBGGit");
+	bgahas.classList.add("blurbg");
 }
 
 function moutGit(){
-var bgahas = document.getElementById("ProjBGGit");
-bgahas.classList.remove("blurbg");
+	var bgahas = document.getElementById("ProjBGGit");
+	bgahas.classList.remove("blurbg");
 }
 
 //Lifepoints
 function moverLife(){
-var bgahas = document.getElementById("ProjBGLife");
-bgahas.classList.add("blurbg");
+	var bgahas = document.getElementById("ProjBGLife");
+	bgahas.classList.add("blurbg");
 }
 
 function moutLife(){
-var bgahas = document.getElementById("ProjBGLife");
-bgahas.classList.remove("blurbg");
+	var bgahas = document.getElementById("ProjBGLife");
+	bgahas.classList.remove("blurbg");
 }
 
 
 //FutureProjects
 function moverFut(){
-var bgahas = document.getElementById("ProjBGFut");
-bgahas.classList.add("blurbg");
+	var bgahas = document.getElementById("ProjBGFut");
+	bgahas.classList.add("blurbg");
 }
 
 function moutFut(){
-var bgahas = document.getElementById("ProjBGFut");
-bgahas.classList.remove("blurbg");
+	var bgahas = document.getElementById("ProjBGFut");
+	bgahas.classList.remove("blurbg");
 }
 
 //Convolution Net
-function moverCon(){
-var bgahas = document.getElementById("ProjBGCon");
-bgahas.classList.add("blurbg");
+	function moverCon(){
+	var bgahas = document.getElementById("ProjBGCon");
+	bgahas.classList.add("blurbg");
 }
 
 function moutCon(){
-var bgahas = document.getElementById("ProjBGCon");
-bgahas.classList.remove("blurbg");
+	var bgahas = document.getElementById("ProjBGCon");
+	bgahas.classList.remove("blurbg");
 }
 
 
