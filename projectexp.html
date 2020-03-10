@@ -168,13 +168,13 @@ function moutAhas(){
 function clickAhas(){
 	console.log("CLICKED HAHAHS");
 	ahasview = document.getElementById("DescriptionAhas")
-	if("none"==ahasview.display){
+	if("none"==ahasview.style.display){
 		gotolistView();
-		ahasview.display = "inline"
+		ahasview.style.display = "inline"
 	}
 	else{
 		gotogridView();
-		ahasview.display = "none"
+		ahasview.style.display = "none"
 	}
 }
 
